@@ -1,0 +1,2017 @@
+/*	
+ * 3dcart Shopping Cart System - Version: 6
+ * http://3dcart.com/
+ * Date: Tue, Sept 23 2014
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+
+/*body:: Controls website background and any other text outside of a table without an associated style.*/ 	
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #231f20;
+	background: #FFF;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+.clear { clear:both;}
+img {
+	border: 0;
+}
+input,
+textarea,
+select,
+button {
+	font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+#mobileMenu i,
+#mobileCatMenu i,
+#mobileCart i {
+	color: #fff;
+	font-size: 24px;
+}
+.top-menu .icon-menu {
+	color: #fff;
+	font-size: 24px;
+}
+#closeSlideMenu i {
+	color: #fff;
+	font-size: 24px;
+}
+::selection {
+	color: #FFF;
+	background: #22303a;
+}
+::-moz-selection {
+	color: #FFF;
+	background: #22303a;
+}
+blockquote {
+	color: #000;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1em;
+	background: #FFF;
+	border-left: 6px solid #22303a;
+	margin: 0 0 15px 0;
+	padding: 40px;
+}
+/* QuickSearch */
+table.searchlight-results {
+	font-family: 'Open Sans', sans-serif;
+    width: 308px;
+}
+div.searchlight-results-wrapper {
+	border: 2px solid #e2e2e2;
+    margin-left: -2px;
+}
+
+/*******************************************************************************************************/
+/*          STYLES USED ON THE FRAME OF THE WEBSITE (HEADER, LEFT NAV, RIGHT NAV AND FOOTER)           */
+/*******************************************************************************************************/
+
+
+/*store-name:: Store Name.*/		 
+.store-name {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 35px;
+	margin:65px 0 0;
+}
+/*store-slogan:: Store Slogan.*/		 
+.store-slogan {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+/*frame:: Controls the left and right column background.*/		
+.frame {
+	background: #FFF;
+}
+/*mod_bg:: Controls the left and right column modules background.*/		
+.mod_bg {
+	background: none;
+}
+/*frame-ht:: Controls the height left, right and middle columns.*/		
+.frame-ht {
+	height: 1000px;
+}
+/*menu-headers:: Controls the way the menu titles look. For example: Categories, Browse By Price, Top Sellers, etc.*/ 
+.menu-headers {
+ 	background: #fff;
+    color: inherit;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+}
+/*footer::  This style controls the text you type under global footer. Merchants usually use to add security logos, credit card logos, privacy notes, etc.*/		
+.footer {
+	font-size: 10px;
+	color: #000;
+	font-weight: 400;
+	text-transform: none;
+}
+/*footerLinks::  Controls the way the Footer Links display in the Global Footer.*/
+.footer a, .footer a:visited, .footer a:hover, .footer a:visited:hover {
+	font-size: 10px;
+	color: #000;
+	font-weight: 400;
+	text-transform: none;
+	text-decoration: underline;
+}
+/*icon:: Controls the way the menu icons display if they are being used.*/ 
+.icon {
+	font-size: 10px;
+	font-weight: 400;
+	color: #FFF;
+}
+/*top-sellers-star:: Controls the background image and style for the top ranking item star.*/
+.top-sellers-star {
+	background: #FFF;
+    border: 2px solid #323f49;
+	color: #323f49;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	height: 30px;
+	line-height: 25px;
+	position: absolute;
+	top: 40px;
+	right: 0;
+    text-align: center;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 30px;
+    z-index: 5;
+}
+/*ranking:: Controls the way the menu icons display if they are being used.*/ 
+.ranking {
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+	color: #22303a;
+	width: 12px;
+	height: 20px;
+	text-align: left;
+}
+/*menu-text:: Controls the way the menu (mailing list) text look on the frame.*/ 
+.menu-text {
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+}
+/*price2:: Controls the way the product's price display in the top sellers and new releases sections.*/ 
+.price2 {
+	font-size: 20px;
+	color: #000;
+	font-weight: 600;
+}
+
+.product-item del {
+    text-decoration: none;
+	background:url(../images/del.jpg) repeat-x left 13px;
+}
+/*cart-text:: Controls the way the text on the mini shopping cart displays. The mini-shopping cart is usually located in the header.*/ 
+.cart-text {
+	font-size: 48px;
+	font-weight: 400;
+	color: #15212a;
+}
+/*search-text:: Controls the way the search box displays of the frame.*/ 
+.search-text {
+	font-size: 20px;
+	font-weight: normal;
+	color: #3d3d3d;
+	line-height: 57px;
+	height: 57px;
+	width: 443px;
+	background: #FFF;
+	border: none;
+	padding: 0 0 0 25px;
+	margin: 0 11px 0 0;
+}
+/*A.cat:: Controls the way the Category Links display in the left or right navigation bars before a user clicks or mouses over them.*/ 	 
+A.cat {
+	color: #fff !important;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform:capitalize;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+
+/*A.cat:hover:: When a user passes  their mouse over them.*/ 	
+A.cat:hover {
+	color: #c9dae4;
+	text-decoration: none;
+}
+/*A.cat:visited:: After a user has visited that section.*/ 
+A.cat:visited {
+	color: #231f20;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+/*A.cat:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A.cat:visited:hover {
+	color: #c9dae4;
+	text-decoration: none;
+}
+/*A.subcat:: Controls the way the Sub-Category Links display in the left or right navigation bars before a user clicks or mouses over them.*/ 	 
+A.subcat {
+	color: #383733;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+    padding: 0 0.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+/*A.subcat:hover:: When a user passes  their mouse over them.*/ 	
+A.subcat:hover {
+    background: #ccc !important;
+	color: #FFF;
+	text-decoration: none;
+}
+/*A.subcat:visited:: After a user has visited that section.*/ 
+A.subcat:visited {
+	color: #383733;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+    padding: 0 0.5em;
+}
+/*A.subcat:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A.subcat:visited:hover {
+    background: #c9dae4;
+	color: #FFF;
+	text-decoration: none;
+}
+/*A:menu:: Controls the way the Links display in the top navigation before a user clicks or mouses over on them.*/ 	 
+A.menu {
+	color: #fff !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform:uppercase;
+	line-height:53px;
+}
+/*A:menu:over:: When a user passes their mouses over them.*/ 	
+A.menu:hover {
+	color: #7bc1ea !important;
+	text-decoration: none;
+}
+/*A:menu:over:: After a user has visited that section.*/ 	
+A.menu:visited {
+	color: #f38284;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: none;
+}
+/*A:menu:visited:over:: A user hovers over a section they have visited.*/ 		
+A.menu:visited:hover {
+	color: #f38284;
+	text-decoration: none;
+}
+/*A:menu-bottom:: Controls the way the Links in the footer display before a user clicks or mouses over on them.*/ 	 
+A.menu-bottom {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: none;
+}
+/*A:menu-bottom:over:: When a user passes their mouses over them.*/ 	
+A.menu-bottom:hover {
+	color: #929497;
+	text-decoration: none;
+}
+/*A:menu-bottom:over:: After a user has visited that section.*/ 	
+A.menu-bottom:visited {
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: none;
+}
+/*A:menu-bottom:visited:over:: When a user hovers over a section they have visited.*/ 		
+A.menu-bottom:visited:hover {
+	color: #929497;
+	text-decoration: none;
+}
+/*A:link:: Controls the way Secondary Links display before a user clicks or mouses over on them.*/ 	 
+A.link {
+	color: #15212a;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1em;
+	text-transform: none;
+	text-decoration: none;
+}
+/*A:link:over:: When a user passes their mouses over them.*/ 	
+A.link:hover {
+	color: #22303a;
+	text-decoration: none;
+}
+/*A:link:over:: After a user has visited that section.*/ 	
+A.link:visited {
+	color: #15212a;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1em;
+	text-transform: none;
+	text-decoration: none;
+}
+/*A:link:visited:over:: When a user hovers over a section they have visited.*/ 		
+A.link:visited:hover {
+	color: #22303a;
+	text-decoration: none;
+}
+/*A.details:: Controls the way the Top Sellers Links display before a user clicks or mouses over them.*/ 	 
+A.details {
+	color: #383733;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: 400;
+}
+/*A.details:hover:: When a user passes their mouse over them.*/ 	 	
+A.details:hover {
+	color: #22303a;
+	text-decoration: none;
+}
+/*A.details:visited:: After a user has visited that section.*/ 
+A.details:visited {
+	color: #383733;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: 400;
+}
+/*A.details:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A.details:visited:hover {
+	color: #22303a;
+	text-decoration: none;
+}
+/*******************************************************/
+/*          STYLES USED THROUGHTOUT THE WEBSITE        */
+/*******************************************************/
+
+
+
+/*Alignment fix for the use of the XHTML Transitional DOCTYPE.*/ 
+tr {
+	text-align: left;
+}
+/*td:: Controls all text inside a table without and associated style.*/ 
+td {
+	text-decoration: none;
+	word-spacing: normal;
+	font-size: 12px;
+}
+/*data:: Controls the font style of your content on all the pages.*/
+.data {
+	text-decoration: none;
+	word-spacing: normal;
+	font-size: 12px;
+}
+/*alternative:: Controls the background color of the boxes used throughout the site.*/
+.alternative {
+	background: #FFF;
+}
+/*page_headers:: Controls the title of all your pages.*/
+.page_headers {
+	font-size: 28px;
+	font-weight: 800;
+	color: #22303a;
+}
+/*titles:: Controls the Tiles  of sections within pages on the site such as (Specials, Feature Items, Items, Related Items).*/ 
+.titles {
+	font-size: 18px;
+	color: #383733;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin-bottom: 10px;
+	padding-left: 9px;
+	border-bottom: 1px solid #383733;
+	display: block;
+}
+/*price:: Controls the way the product's final price display throughout the site.*/ 
+.price {
+	font-size: 13px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+/*error:: Controls the error messages*/ 
+.error {
+	font-size: 12px;
+	font-weight: 400;
+	color: #e10e04;
+	text-decoration: none;
+}
+/*borders:: Controls the color of the line dividers used throughout the site.*/ 
+.borders {
+	color: #585C5F;
+	border: 1px solid #CCC;
+	border-style: none none solid;
+}
+/*borders2:: Controls the color of the solid line dividers used throughout the site.*/ 
+.borders2 {
+	border: 1px solid #CCC;
+	border-style: none none solid;
+}
+/*A:: Controls the way the all Links without an associated style display before a user clicks or mouses over them.*/ 	 
+A {
+	color: #000;
+	font-size: 13px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 400;
+}
+/*A:hover:: When a user passes  their mouse over them.*/ 	 	
+A:hover {
+	color: #929497;
+	text-decoration: underline;
+}
+/*A:visited:: After a user has visited that section.*/ 
+A:visited {
+	color: #000;
+	font-size: 13px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 400;
+}
+/*A:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A:visited:hover {
+	color: #929497;
+	text-decoration: underline;
+}
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON VIEW CART AND CHECKOUT PAGES      */
+/*******************************************************************************************************/
+
+/*checkout-headers:: Controls the titles of the sections on the checkout pages (Billing Information, Shipping Information etc)*/
+.checkout-headers {
+	font-size: 14px;
+	color: #22303a;
+	font-weight: 700;
+}
+/*steps:: Controls the way the steps on the checkout pages display.*/
+.steps {
+	font-size: 16px;
+	font-weight: 700;
+	color: #CCC;
+}
+/*steps_on:: Controls the way the step the customer is currently on displays on the checkout pages.*/
+.steps_on {
+	font-size: 16px;
+	font-weight: 700;
+	color: #22303a;
+}
+/*titles2:: Controls the titles on the view cart page*/ 
+.titles2 {
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #EEE;
+	color: #22303a;
+	padding:4px;
+}
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON PRODUCT PAGES      */
+/*******************************************************************************************************/
+
+/*options-titles:: Controls the way the option titles display on the product page.*/
+.options-titles {
+	font-size: 12px;
+	font-weight: 700;
+	color: #585C5F;
+	border: 1px solid #CCC;
+	border-style: none none solid;
+}
+/*item:: Controls the item description and item details text.*/ 
+.item {
+	font-size: 12px;
+	color: #383733;
+	font-weight: 400;
+}
+/*itemTitle:: Controls the name of the Product.*/ 
+.item-title {
+	font-size: 22px;
+	color: #22303a;
+	font-weight:bold;
+}
+/*price-info:: Controls the way the sub-prices display on the product page, the final price is controlled by the style called "price".*/ 
+.price-info {
+	font-size: 12px;
+	font-weight: 400;
+	color: #585C5F;
+}
+/*small-txt:: Controls the way the item id displays.*/ 
+.small-txt {
+	color: #afafae;
+	text-decoration: none;
+	text-align: left;
+	letter-spacing: 0;
+	font-size: 10px;
+	vertical-align:bottom;
+}
+/*availability-txt:: Controls the way the Availability of the product displays i.e. 'In Stock', 'Back Order'.*/ 
+.availability-txt {
+	color: #22303a;
+}
+/*reward-title:: Controls the title of the Reward Points section.*/ 
+.reward-title {
+	color: #22303a;
+	text-decoration: none;
+	word-spacing: normal;
+	text-align: left;
+	letter-spacing: 7px;
+	line-height: 10px;
+	font-size: 16px;
+	font-style:italic;
+}
+/**********************************************************/
+/*      FORM FIELDS & BUTTONS THROUGHOUT THE WEBSITE      */
+/**********************************************************/
+
+/*btn:: Controls the buttons, (ONLY if it is not using and image).*/ 
+section#home .btn_over,
+section#home .btn { width:100%; padding:9px 14px;}
+.btn {
+	border: none;
+	background: #000;
+	font-weight: 400;
+	font-size: 16px;
+	color: #FFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0;
+	padding: 4px 14px;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	border:1px solid #000;
+}
+/*btn_over:: Controls the buttons when a user mouses over them, (ONLY if it is not using and image).*/ 
+.btn_over {
+	border: none;
+	background: #7bc1ea;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0;
+	padding: 4px 14px;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border:1px solid #000;
+}
+/*button:hover:: Controls the button tag when a user mouses over them, (ONLY if it is not using and image).*/ 
+button:hover {
+	border: none;
+	background: #f07893;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0;
+	padding: 4px 14px;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border:1px solid #000;
+}
+/*txtBoxStyle:: Controls the text and style of the Text Boxes.*/  	
+.txtBoxStyle {
+	border: 1px solid #b7b4ac;
+	background: #fefefe;
+	font-weight: 400;
+	font-size: 12px;
+	color: #000;
+    margin: 0;
+	padding: 8px 12px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#viewCart .txtBoxStyle{
+	padding:8px;
+}
+/*txtAreaStyle:: Controls the text and style of the Text Areas.*/ 	
+.txtAreaStyle {
+	border: 1px solid #b7b4ac;
+	background: #fefefe;
+	font-weight: 400;
+	font-size: 12px;
+	color: #000;
+    margin: 0;
+	padding: 8px 12px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+/*txtSearch:: Controls the style of the Search Box, if different from txtBoxStyle.*/
+.txtBoxSearch {
+	height: 20px;
+	color: #000;
+	font-size: 12px;
+	border: none;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+
+/********************************************/
+/*   STYLES USED ONLY ON THE INVOICE        */
+/********************************************/
+
+/*invoice_table:: Controls the background color on your invoices*/ 
+.invoice_table {
+	background-color: #f9f8f8;
+}
+/*invoice_title:: Controls the way the title of the invoices look */ 
+.invoice_title {
+	font-size: 10px;
+	font-weight: 700;
+	background-color: #cbcaca;
+	color: #4f4e4e;
+}
+/*************************************************************/
+/*          LEGACY STYLES: STYLES USED PRIOR TO v3.2         */
+/*************************************************************/
+
+/*font1:: Primary Screen Font */ 
+.font1 {
+	font-size: 12px;
+	font-weight: 400;
+	color: #383733;
+}
+/*font2:: Secondary Screen Font */ 
+.font2 {
+	font-size: 12px;
+	font-weight: 400;
+	color: #22303a;
+}
+.font3 {
+	font-size: 12px;
+	font-weight: 400;
+	color: #FFF;
+}
+.font4 {
+	font-size: 12px;
+	font-weight: 400;
+	color: #c32519;
+}
+/*top:: Controls the  Color of the top Bar*/		
+.top {
+	background: none;
+}
+/*line:: Controls the  Color of the line bellow the top bar*/		
+.line {
+	background: #FFF;
+}
+
+
+/*********************************/
+/*          CUSTOM STYLES        */
+/*********************************/
+
+/* Accent/Secondary Colors */
+
+.social-bookmarking {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.accent-color {
+    color: #c9dae4;
+}
+.accent-bg-color {
+    background: #e2e2e2;
+    color: #000;
+}
+
+#mainContainer {
+	display: block;
+}
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+#mobileMenu {
+    cursor: pointer;
+	display: none;
+	float: right;
+	width: 30px;
+	height: 25px;
+	margin: 8px 0 0 0;
+}
+#mobileCatMenu {
+    cursor: pointer;
+	display: none;
+	float: left;
+	width: 30px;
+	height: 25px;
+	margin: 5px 0 0 0;
+}
+#mobileCart {
+    cursor: pointer;
+	display: none;
+	float: right;
+	width: 30px;
+	height: 25px;
+	margin: 5px 10px 0 0;
+}
+#closeSlideMenu {
+    cursor: pointer;
+    display: none;
+    text-align: right;
+}
+.top-menu {
+    background: #fff;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+.top-menu ul {
+    float: left;
+    height: 52px;
+    line-height: 20px;
+    list-style: outside none none;
+    margin: 0;
+    max-width: 50%;
+    overflow: hidden;
+    padding: 0;
+}
+.top-menu li {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: right;
+}
+#catNavMenu {
+	background: #fff;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	border-bottom:1px solid #cacfd1;
+}
+#catNavMenu ul {
+	float: left;
+    height: 52px;
+    line-height: 20px;
+    list-style: outside none none;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+	text-align:center;
+}
+#catNavMenu li{
+	display: inline-block;
+    margin-left: 50px;
+    text-align: right;
+}
+
+li.m-search {
+    border-bottom: 1px solid #000;
+	padding: 1em 2%;
+	display:none !important;
+}
+.m-search form {
+	margin: 0 auto;
+	text-align: center;
+}
+.m-search input {
+	float: left;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+.m-search input[type="text"] {
+	line-height: 30px;
+	height: 30px;
+	width: 85%;
+	background: #FFF;
+	border: 1px solid #FFF;
+	padding: 0 0 0 15px;
+	margin: 0 0;
+}
+.m-search button {
+	cursor: pointer;
+	height: 30px;
+	background: #f07893;
+	border: none;
+    margin: 0;
+    padding: 0;
+	width: 15%;
+	color:#fff;
+}
+.theme-default .nivo-controlNav{
+	display:none;
+}
+.user {
+	float: right;
+    font-size: 16px;
+    height: auto;
+    line-height: 40px;
+    margin: 65px 0 0;
+    width: 400px;
+	text-align:right;
+	color:#000;
+}
+.user a { font-size:16px; color:#000 !important; text-decoration:none;}
+#searchBox {
+	background: none repeat scroll 0 0 #fff;
+    border: 1px solid #a2a2a2;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    float: right;
+    position: relative;
+    width: auto;
+	padding:2px;
+	margin: 10px 0 0;
+}
+#searchBox form {
+    position: relative;
+}
+#searchBox input {
+    float: left;
+}
+#searchBox input[type="text"] {
+	width: 320px;
+	height: 26px;
+	color: #777;
+	line-height: 26px;
+	padding: 0 0 0 10px;
+	border: none;
+	-webkit-appearance: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	font-size:14px;
+	float:right;
+}
+#searchBox input[type="submit"] {
+	background: #fff url(../images/lens.png) no-repeat center center;
+    border: none;
+    cursor: pointer;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    width: 26px;
+	-webkit-appearance: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	float:left;
+}
+header {
+	position: relative;
+	height: 230px;
+}
+header .wrapper {
+	max-height: 230px;
+}
+#logo {
+	float: left;
+    margin-top: 0;
+    text-align: center;
+}
+#logo img {
+	/*max-width: 100%;
+	max-height: 94px;*/
+	 margin: 20px 0 0;
+    max-width: 100%;
+}
+#cart {
+	background: url(../images/shopping-cart-icon.jpg) no-repeat left center;
+	color: #000 !important;
+    display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+    text-decoration: none;
+	text-align: center;
+    line-height:normal;
+	padding:0 0 0 30px;
+	float:right;
+	text-transform:uppercase;
+}
+#cart span#noItemsText {
+    color: #231f20;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+li.search {
+	display: none;
+}
+nav#catNavMenu {
+	background:#000;
+	margin-bottom: 30px;
+}
+aside {
+	float: left;
+	width: 200px;
+    display: block;
+}
+aside#leftBar {
+	margin-right: 25px;
+	padding:5px;
+}
+aside#rightBar {
+	margin-left: 25px;
+}
+aside .module {
+	margin-bottom: 25px;
+    position: relative;
+}
+aside .module ul {
+	background: #e2dfdf;
+    list-style: outside none none;
+    margin: 0 0 20px;
+    padding: 15px;
+    text-align: center;
+}
+aside .module li a {
+	line-height: 23px;
+	color:#676666 !important;
+}
+aside .module .info {
+	width: 100%;
+}
+aside .module .name {
+	float: left;
+	width: 70%;
+}
+aside .module .name a {
+	font-size: 14px !important;
+    font-weight: 400;
+    line-height: normal;
+}
+aside .module .price2 {
+    float: left;
+    text-align: left;
+    width: 50%;
+	font-size:20px;
+	font-weight:600;
+}
+aside .module .stars {
+	float: right;
+	width: 50%;
+}
+aside .module .div {
+	display: block;
+	height: 1px;
+	background: #d0d0d0;
+	margin: 10px 0;
+}
+#modPrice ul li { text-align:left; padding:10px 0; border-bottom:1px solid #fff;}
+#modPrice ul li:last-child { border-bottom:none;}
+.manf-select {
+	background: #FFF url(../images/dark-arrow.png) no-repeat right center;
+    border: 2px solid #e2e2e2;
+	width: 200px;
+	overflow: hidden;
+	height: 29px;
+}
+.manf-select select {
+	background: transparent;
+	border: none;
+	line-height: 29px;
+	height: 29px;
+    margin: 0;
+    padding: 0;
+	-webkit-appearance: none;
+	width: 310px;
+}
+.topsellers_topitem .img {
+	display: table-cell;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.topsellers_topitem .img img {
+    max-height: 150px;
+    max-width: 150px;
+}
+.topsellers_topitem .info {
+	background: #FFF;
+	padding: 0.5em 0;
+}
+.topsellers_topitem .name {
+	float: left;
+	width: 70%;
+	margin-bottom: 10px;
+}
+.topsellers_topitem .price2 {
+	float: right;
+	width: 30%;
+	text-align: right;
+	margin-bottom: 10px;
+}
+#mainContent {
+	float: left;
+	width: 100%;
+	background:#fff;
+	padding:0;
+}
+footer {
+    border-top:none;
+}
+footer .wrapper {
+	margin: 20px auto;
+}
+footer h3 {
+	color: #22303a;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	display: block;
+	margin: 35px 0 10px 0;
+    padding: 0;
+}
+footer .ftr-col {
+    float: left;
+    margin: 0 20px 0 0;
+}
+footer .col1 {
+    /*width: 350px;*/
+	width: 40%;
+	margin:0 0 0 60px;
+}
+footer .col2 {
+    width: 50%;
+}
+footer .col3 {
+	width: 25%;
+    margin: 0;
+	border-right:1px solid #000;
+}
+footer .col4 {
+	width: 20%;
+    margin: 0;
+}
+#modManufacturer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#modManufacturer ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 35px 0 10px 0;
+    height: 100px;
+	padding: 0;
+    overflow: hidden;
+}
+#modManufacturer li {
+	float: left;
+	width: 100%;
+}
+#modLinks ul {
+
+}
+#modLinks ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 35px 0 0 0;
+    height: 100px;
+	padding: 0;
+	padding: 0;
+	overflow:visiable;
+	border-right:1px solid;
+}
+#modLinks li {
+	float: left;
+	width: 35%;
+	margin-bottom:10px;
+}
+#mailistBox label {
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	display: block;
+	margin: 35px 0 10px 0;
+}
+#mailistBox input, #mailistBox span {
+	float: left;
+	display: block;
+}
+#mailistBox span {
+	margin-right: 30px;
+}
+.mailist-box {
+	border: 1px solid #e2e2e2;
+	margin-bottom: 13px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:#fff;
+	padding:5px;
+}
+#mailistBox input[type="text"] {
+	background: #FFF;
+	border: none;
+	height: 27px;
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 65%;
+	-webkit-appearance: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	color:#555;
+	font-size:16px;
+}
+#mailistBox input[type="submit"] {
+	background: #000;
+	border: 1px solid #000;;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 35%;
+	-webkit-appearance: none;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	float:right;
+}
+#mailistBox input[type="submit"]:hover {
+	background: #f07893;
+}
+#mailistBox input[type="radio"] {
+    margin: 2px 5px 0 0;
+    padding: 0;
+}
+.icons-holder { background:#f07893; width:100%;}
+.social-icons {
+ 	float: none;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0px 0;
+    text-align: center;
+	background:#f07893;
+}
+
+.social-icons a {
+	 color: #f07893;
+    float: right;
+    font-size: 15px;
+    height: 25px;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 25px;
+	background:#000;
+	border-radius:50%;
+	line-height:25px
+}
+.social-icons a:hover {
+    color: #d0d0d0;
+}
+#globalFooter {
+    margin: 0px;
+}
+#copyright {
+    margin: 0 0 15px;
+}
+.stats {
+	height: 0;
+	overflow: hidden;
+}
+#homeCarousel {
+    margin-bottom: 20px;
+}
+section#home .header-specials {
+	color:#000;
+	font-size:25px;
+	padding: 0px 0;
+	text-transform:uppercase;
+	text-align:center;
+}
+.header-specials {
+	color: #231f20;
+    font-weight: 400;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin: 0 0 20px;
+}
+.product-item:hover { box-shadow:none;}
+.product-item .action {
+    margin: 10px 0;
+    text-align: center;
+}
+.product-item .status {
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+}
+.product-item .name{
+	line-height: normal;
+    margin-bottom: 10px;
+    min-height: 42px;
+	height:42px !important;
+	overflow:hidden;
+	text-align:left;
+}
+
+.product-item .img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    min-height: 125px;
+    position: relative;
+    text-align: center;
+}
+.product-item .img img{
+	max-width: 225px;
+}
+.product-item .name a {
+	font-size:14px;
+}
+
+.product-item .on-sale {
+    background:#ff3200;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 40px;
+    opacity: 0.9;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 5px;
+    width: 50px;
+}
+.product-item .stars {
+    height: 16px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.product-item .stars img {
+    float: none;
+    text-align: center;
+}
+.product-item .stars span { display:none !important;}
+.product-item .price {
+ 	color: #000;
+    font-size: 20px !important;
+    text-align: left;
+}
+
+.status img {
+    width: 65px;
+}
+/*	listing_0.html Template
+	--------------------------	*/
+#listing0 h1 {
+    font-size: 18px;
+}
+
+#listing0 .detail-section .beta-col button {
+    min-width: 185px;
+    width: 100%;
+}
+ul#desktopMenu {
+	margin: 0 0 20px;
+    padding: 15px;
+	list-style: none;
+	text-align: center;
+	background:#e2dfdf;
+}
+ul#desktopMenu li {
+	border-bottom: 1px solid #fff;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+ul#desktopMenu li:last-child { border-bottom:none;}
+ul#desktopMenu li:hover {
+	/*background: #FFF;*/
+}
+ul#desktopMenu li a {
+	display:inline-block;
+	padding: 10px 0;
+	color:#676666 !important;
+}
+
+ul#desktopMenu li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+ul#desktopMenu li ul {
+    background:#ffffff;
+    border: 1px solid #eee;
+    display: none;
+    font-family: "Open Sans",sans-serif;
+    margin-left: -110px;
+    padding: 10px;
+    position: absolute;
+    right: -248px;
+    text-align: left;
+    top: 0;
+    width: 250px;
+    z-index: 10;
+}
+ul#desktopMenu li:hover ul {
+	display: block;
+}
+ul#desktopMenu li ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: block;
+	width: 100%;
+	background:none;
+}
+ul#desktopMenu li ul li a:hover {
+	color: #000;
+}
+ul#desktopMenu li ul li a {
+	color: #333;
+	text-transform: none;
+	font-weight: normal;
+	padding: 0 10px;
+	display: block;
+	line-height:28px;
+}
+ul#desktopMenu li ul li:hover {
+	background: #fcfcfc;
+}
+.down {
+	float: right;
+	margin-top: -25px;
+	margin-right: 7px;
+	font-weight: bolder;
+	color: #AAA;
+}
+
+/*	Responsive Navigation Menu
+	--------------------------	*/
+
+/*
+    Mobile Menu Core Style
+*/
+.slicknav_btn {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	float: left;
+	padding: 0.438em 0.625em 0.438em 0.625em;
+	line-height: 1.125em;
+	cursor: pointer;
+}
+.slicknav_menu .slicknav_menutxt {
+	display: block;
+	line-height: 1.188em;
+	float: left;
+}
+.slicknav_menu .slicknav_icon {
+	float: left;
+	margin: 0.188em 0 0 0.438em;
+}
+.slicknav_menu .slicknav_no-text {
+	margin: 0
+}
+.slicknav_menu .slicknav_icon-bar {
+	display: block;
+	width: 1.125em;
+	height: 0.125em;
+}
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+	margin-top: 0.188em
+}
+.slicknav_nav {
+	clear: both
+}
+.slicknav_nav ul, .slicknav_nav li {
+	display: block
+}
+.slicknav_nav .slicknav_arrow {
+	font-size: 0.8em;
+	margin: 0 0 0 0.4em;
+}
+.slicknav_nav .slicknav_item {
+	cursor: pointer;
+}
+.slicknav_nav .slicknav_row {
+	display: block;
+}
+.slicknav_nav a {
+	display: block
+}
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+	display: inline
+}
+.slicknav_menu:before,
+.slicknav_menu:after {
+	content: " ";
+	display: table;
+}
+.slicknav_menu:after {
+	clear: both
+}
+/* IE6/7 support */
+.slicknav_menu {
+*zoom: 1
+}
+/* 
+    User Default Style
+    Change the following styles to modify the appearance of the menu.
+*/
+.slicknav_menu {
+	font-size: 16px;
+	display: none;
+}
+/* Button */
+.slicknav_btn {
+	margin: 8px 0 0;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+/* Button Text */
+.slicknav_menu .slicknav_menutxt {
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 0 1px 3px #000;
+}
+/* Button Lines */
+.slicknav_menu .slicknav_icon-bar {
+	background-color: #f5f5f5;
+}
+.slicknav_menu {
+    float: left;
+}
+.slicknav_nav {
+    background: #22303a;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 0.875em;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 999;
+}
+.slicknav_nav,
+.slicknav_nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+.slicknav_nav ul {
+	padding: 0;
+	margin: 0 0 0 20px;
+}
+.slicknav_nav .slicknav_row {
+	padding: 5px 10px;
+	margin: 2px 5px;
+}
+.slicknav_nav a {
+	padding: 5px 10px;
+	margin: 2px 5px;
+	text-decoration: none;
+	color: #fff;
+	text-align:left;
+}
+.subMenu {
+    background: #000;
+}
+.slicknav_nav .subMenu a.subcat,
+.slicknav_nav .subMenu a.subcat:visited {
+	color: #fff;
+}
+.slicknav_nav .slicknav_row:hover {
+	background: #c9dae4;
+	color: #000;
+}
+.slicknav_nav a:hover {
+	background: #c9dae4;
+	color: #000;
+}
+.slicknav_nav .slicknav_txtnode {
+	margin-left: 15px;
+}
+.slicknav_nav a.cat:hover,
+.slicknav_nav a.cat:visited:hover {
+    color: #000;
+}
+.slicknav_nav a.cat,
+.slicknav_nav a.cat:visited {
+    color: #FFF;
+}
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+    display: block;
+	padding: 0.5em 0;
+	margin: 0;
+}
+
+/*********************************/
+/*       LTE8 IE FALLBACK        */
+/*********************************/
+.no-boxshadow .boxShadow {
+    border: 1px solid #eae9e6;
+}
+#featureBlock .product-container { width:33.333% !important;}
+
+#leftBar .dragbox-content ul li .cat:after,
+#leftBar .dragbox-content ul li .cat:before { background:none; padding:0px;} 
+#quickView .availabilityInfo {
+    float: left;
+    width: 100%;
+}
+.sub-categories a { font-size:15px;}
+/*	Theme Responsive Styles
+	-----------------------	*/
+	#homeCarousel{
+		overflow:hidden;
+
+	}
+@media only screen and (max-width: 991px) {
+#copyright { text-align:center !important;}
+.user { display:none;} 
+#mailistBox span {
+    margin-right: 7px;
+}
+.store-name {
+	margin: 15px 0 0;
+}
+}
+@media only screen and (max-width: 768px) {
+
+html {
+	padding: 0 !important;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.wrapper {
+	width: 100% !important;
+	margin: auto;
+	padding: 0 20px;
+}
+
+header .wrapper {
+    max-height: 120px;
+}
+.top-menu {
+    height: 50px;
+	background:#000;
+}
+.top-menu ul {
+    float: none;
+	height:auto;
+	max-width:100%;
+}
+.top-menu li {
+    display: block;
+    margin: 0;
+}
+
+header {
+	height: 120px;
+	padding: 0.5em 0;
+}
+nav#catNavMenu {
+    border: none;
+    margin: 0;
+}
+ul#desktopMenu {
+    display: none;
+}
+/* nav */
+.slicknav_menu {
+    display: block;
+}
+
+aside {
+	display: none !important;
+}
+#mainContent {
+	display: block;
+	width: 100% !important;
+}
+#logo {
+	float: none;
+	margin-left: 0;
+	text-align: center;
+	height:120px
+}
+#logo img {
+	height: 95px;
+    margin-top: 5px;
+    max-width: 100%;
+}
+#searchBox {
+	width: 100%;
+	padding: 0 2em;
+}
+#searchBox input[type="text"] {
+	width: 100%;
+}
+.mobile .search {
+	display: block;
+	border: 1px solid #000;
+	margin: 5px 0 15px 0;
+}
+.mobile .search form {
+	margin: 0 auto;
+	text-align: center;
+}
+.mobile .search input {
+	float: left;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+.mobile .search input[type="text"] {
+	font-size: 16px;
+	font-weight: normal;
+	color: #3d3d3d;
+	line-height: 30px;
+	height: 30px;
+	width: 80%;
+	background: #FFF;
+	border: none;
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+.mobile .search input[type="submit"] {
+	width: 20%;
+	height: 30px;
+	background: #FFF url(../images/lens.png) no-repeat center center;
+	border: none;
+	cursor: pointer;
+}
+#homeHeader {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+#homeHeader img {
+	width: 100%;
+	height: auto;
+}
+.header-specials {
+	width: 100%;
+	margin-bottom: 25px;
+}
+footer h3 {
+    text-align: center;
+}
+
+footer .col4 { width:30%;}
+footer .col1,
+footer .col2,
+footer .col3 {
+    margin: 0;
+    /*width: 100%;*/
+}
+#modManufacturer ul {
+    text-align: center;
+    width: 100%;
+}
+#modManufacturer li {
+    float: none;
+    width: auto;
+}
+#modManufacturer a.view-all-manf {
+    display: none;
+}
+#modManufacturer select {
+    border: 2px solid #e2e2e2;
+    padding: 3px;
+    width: 100%;
+}
+#modLinks ul {
+    text-align: center;
+    width: 100%;
+}
+#modLinks li {
+    float: none;
+    width: auto;
+}
+#mailistBox {
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+#mailistBox label {
+	text-align: left;
+}
+#mailistBox input[type="text"] {
+	width: 65%;
+}
+#mailistBox input[type="submit"] {
+	/*width: 10%;*/
+}
+#copyright {
+	float: none;
+	text-align: center;
+	margin-bottom: 25px;
+	width: 100%;
+}
+.social-icons {
+	width: 100%;
+	display: block;
+	margin: 0 0 25px;
+	position: relative;
+	text-align: center;
+}
+.social-icons a {
+	float: none;
+	display: inline-block;
+}
+#globalFooter {
+	float: none;
+	text-align: center;
+	margin-bottom: 25px;
+    width: 100%;
+}
+
+/* General styles for Slide Out Menus */
+.cbp-spmenu {
+	background: #22303a;
+	position: fixed;
+}
+.cbp-spmenu a,
+.cbp-spmenu a:visited {
+	display: block;
+	font-size: 1.1em;
+	font-weight: 300;
+    text-align: left;
+}
+.cbp-spmenu a:hover,
+.cbp-spmenu a:visited:hover {
+}
+/* Orientation-dependent styles for the content of the menu */
+ 
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #000;
+	padding: 1em;
+	line-height:normal;
+	color:#fff !important;
+}
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #000;
+}
+/* Vertical menu that slides from the left or right */
+ 
+.cbp-spmenu-left {
+	left: -240px;
+}
+.cbp-spmenu-right {
+	right: -240px;
+}
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0;
+    z-index: 1050;
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0;
+}
+/* Push classes applied to the body */
+ 
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+/* Transitions */
+ 
+.cbp-spmenu, .cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#modManufacturer { margin:35px 0 0 0;}
+#mobileCart,
+#mobileMenu { display:block !important;}
+#catNavMenu ul { height:auto;}
+#catNavMenu li { display:inline; margin:0px !important;}
+li.m-search { display:block !important;}
+#closeSlideMenu { display:block !important;}
+}
+@media only screen and (max-width: 600px) {
+footer .col1 { width:100% !important;}
+#mailistBox { height:auto;}
+
+footer .col2, footer .col3 {
+    width: 100% !important;
+}
+#modLinks ul,
+#modManufacturer ul { height:auto !important;}
+}
+@media only screen and (max-width: 980px) {
+
+html {
+	padding: 0 !important;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.wrapper {
+    width: 100%;
+	padding: 0 20px;
+}
+#leftBar {
+    display: none !important;
+}
+#rightBar {
+    display: none;
+}
+footer .col4 { width:100%;}
+.social-icons { 
+	background:none;
+	width:100%;
+	margin-top:15px;
+	float:none;
+	text-align:center;
+}
+.social-icons a {
+	float:none;
+	width:100%;
+	max-width:42px;
+	display:inline;
+	text-align:center;
+}
+
+footer .col3 {
+    border-right:none;
+    margin: 0;
+    width: 50%;
+}
+footer .col3 #modManufacturer { margin-top:35px;}
+footer .col2 {
+    width: 100%;
+	margin:0px;
+}
+footer .col1 { width:100%; margin:0px;}
+#modLinks ul {  min-height:inherit; border:none;}
+#modLinks li{
+	width:100%;
+}
+.top-menu {
+    height: 50px;
+    background: #000;
+}
+.slicknav_menu {
+    display: block;
+}
+/*#mobileCart, #mobileMenu {
+    display: block !important;
+}*/
+/*.slicknav_menu {
+    display: block;
+}*/
+/*#closeSlideMenu {
+    display: block !important;
+}
+#catNavMenu ul {
+    height: auto;
+}
+li.m-search {
+    display: block !important;
+}*/
+.top-menu ul {
+    float: none;
+    height: auto;
+    max-width: 100%;
+}
+#logo{
+	width:100%;
+}
+}
+@media only screen and (max-width: 480px) {	
+#featureBlock .product-container{
+    width: 50% !important;
+}
+
+#subcategoriesBlock .columns-3 li,
+#subcategoriesBlock .columns-4 li,
+#subcategoriesBlock .columns-5 li,
+#subcategoriesBlock .columns-6 li {
+    width: 50%;
+}	
+.checkout-items {
+    width: 64%;
+}
+}
+@media only screen and (max-width: 320px) {
+footer .col2, footer .col3 {
+    width: 100% !important;
+}
+#modLinks ul { min-height:120px;}
+
+#mailistBox label {
+    text-align: left;
+}
+.social-icons a { margin:0px !important;}
+#featureBlock .product-container {
+    width: 100% !important;
+}
+
+#subcategoriesBlock .columns-3 li,
+#subcategoriesBlock .columns-4 li,
+#subcategoriesBlock .columns-5 li,
+#subcategoriesBlock .columns-6 li {
+    width: 100%;
+}
+#mailistBox input[type="submit"] { width:100%; margin:10px 0 0 0;}
+section#home .header-specials { font-size:20px;}
+
+}
